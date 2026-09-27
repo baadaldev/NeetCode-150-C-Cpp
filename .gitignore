@@ -1,0 +1,12 @@
+# Binaries and Object files
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# Temporary and build files
+scripts/
+test.js
+.DS_Store
+Thumbs.db

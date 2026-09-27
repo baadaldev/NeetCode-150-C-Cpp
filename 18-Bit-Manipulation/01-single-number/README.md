@@ -1,0 +1,25 @@
+# Single Number
+
+[![LeetCode](https://img.shields.io/badge/LeetCode-136-FFA116?style=flat-square&logo=leetcode&logoColor=white)](https://leetcode.com/problems/single-number/)
+[![Difficulty](https://img.shields.io/badge/Difficulty-Easy-22c55e?style=flat-square)](#)
+
+## 📌 Problem Overview
+- **Topic:** Bit Manipulation
+- **LeetCode ID:** [136 - Single Number](https://leetcode.com/problems/single-number/)
+- **Difficulty:** 🟢 Easy
+- **Time Complexity:** `O(n)`
+- **Space Complexity:** `O(1)`
+
+---
+
+## 💡 Algorithmic Approach & Summary
+XOR all numbers; pairs cancel out (x ^ x = 0), leaving only the single number.
+
+---
+
+## 💻 Source Code Solutions
+- [C Implementation (solution.c)](solution.c)
+- [C++ Implementation (solution.cpp)](solution.cpp)
+
+---
+*Part of [NeetCode 150 Solutions in C & C++](https://github.com/baadaldev/NeetCode-150-C-Cpp) by [@baadaldev](https://github.com/baadaldev).*
