@@ -1,25 +1,15 @@
-# Group Anagrams
+﻿# Group Anagrams
 
-[![LeetCode](https://img.shields.io/badge/LeetCode-49-FFA116?style=flat-square&logo=leetcode&logoColor=white)](https://leetcode.com/problems/group-anagrams/)
-[![Difficulty](https://img.shields.io/badge/Difficulty-Medium-eab308?style=flat-square)](#)
+## Problem Description
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
 
-## 📌 Problem Overview
-- **Topic:** Arrays & Hashing
-- **LeetCode ID:** [49 - Group Anagrams](https://leetcode.com/problems/group-anagrams/)
-- **Difficulty:** 🟡 Medium
-- **Time Complexity:** `O(n * k log k)`
-- **Space Complexity:** `O(n * k)`
+## Approaches & Complexity Analysis
 
----
+| Approach | Time Complexity | Space Complexity | Description |
+| :--- | :--- | :--- | :--- |
+| **Categorize by Sorted String** | O(N * K log K) | O(N * K) | Sort each string of length K and use as map key. |
+| **Categorize by Count** | O(N * K) | O(N * K) | Generate a 26-char frequency tuple/string as map key. |
 
-## 💡 Algorithmic Approach & Summary
-Sort each string to obtain a canonical key, then group matching strings into a hash table bucket.
-
----
-
-## 💻 Source Code Solutions
-- [C Implementation (solution.c)](solution.c)
-- [C++ Implementation (solution.cpp)](solution.cpp)
-
----
-*Part of [NeetCode 150 Solutions in C & C++](https://github.com/baadaldev/NeetCode-150-C-Cpp) by [@baadaldev](https://github.com/baadaldev).*
+## Key Insights
+- For small string lengths K, sorting each string (std::sort) is concise and extremely fast.
+- The sorted string serves as a canonical signature for all its anagrams.
