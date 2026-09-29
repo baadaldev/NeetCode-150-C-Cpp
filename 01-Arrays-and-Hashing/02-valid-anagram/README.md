@@ -1,25 +1,16 @@
-# Valid Anagram
+﻿# Valid Anagram
 
-[![LeetCode](https://img.shields.io/badge/LeetCode-242-FFA116?style=flat-square&logo=leetcode&logoColor=white)](https://leetcode.com/problems/valid-anagram/)
-[![Difficulty](https://img.shields.io/badge/Difficulty-Easy-22c55e?style=flat-square)](#)
+## Problem Description
+Given two strings s and 	, return 	rue if 	 is an anagram of s, and alse otherwise.
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
-## 📌 Problem Overview
-- **Topic:** Arrays & Hashing
-- **LeetCode ID:** [242 - Valid Anagram](https://leetcode.com/problems/valid-anagram/)
-- **Difficulty:** 🟢 Easy
-- **Time Complexity:** `O(n)`
-- **Space Complexity:** `O(1)`
+## Approaches & Complexity Analysis
 
----
+| Approach | Time Complexity | Space Complexity | Description |
+| :--- | :--- | :--- | :--- |
+| **Sorting** | O(N log N) | O(1) or O(N) | Sort both strings and compare character-by-character. |
+| **Hash Table / Frequency Array** | O(N) | O(1) | Use a fixed 26-element array to count character frequencies. |
 
-## 💡 Algorithmic Approach & Summary
-Count the frequency of each character across both strings using a fixed-size frequency array of 26 letters.
-
----
-
-## 💻 Source Code Solutions
-- [C Implementation (solution.c)](solution.c)
-- [C++ Implementation (solution.cpp)](solution.cpp)
-
----
-*Part of [NeetCode 150 Solutions in C & C++](https://github.com/baadaldev/NeetCode-150-C-Cpp) by [@baadaldev](https://github.com/baadaldev).*
+## Key Insights
+- Since the alphabet consists of 26 lowercase English letters, a fixed array of size 26 provides O(1) auxiliary space.
+- Increment counts for characters in s and decrement for 	. If all frequencies return to 0, the strings are valid anagrams.
